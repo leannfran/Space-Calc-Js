@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="style.css">  
+  <meta name="theme-color" content="#fafafa">
+  <script src="https://kit.fontawesome.com/f67ab9bc87.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+
+<body id="grid__index">
+  <header class="headerNav">
+
+  <nav class="nav container" id="nav">
+      
+      <h1 class="nav__logo">HealtyMind.</h1>
+      
+      <ul class="nav__links">
+        
+        <li class="nav__item"><a class="nav__link" href="#">inicio</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">sobre mi</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">psicologia</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">contacto</a></li>
+      
+      </ul>
+      
+      <a href="#nav" class="nav__hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <a href="#" class="nav__close">
+        <i class="fa-solid fa-xmark"></i>      </a>
+        
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <div class="hero__container">
+      <h2 id="titulo" class="hero__h2">Calculadora Espacial</h2>
+      <input type="text" placeholder="Ingrese su Nombre" id="ingrese__nombre">
+      <input type="number" placeholder="Ingrese su Peso" id="ingrese__peso">
+      <input type="number" placeholder="Ingrese su planeta" id="ingrese__planeta">
+      <input type="button" value="Calcular!" id="boton__calc">
+
+      <h3 id="pesoFinal__h3"></h3>
+      <h4 id="container__sobrePeso"></h4>
+    </div>
+
+    <div id="container__otrasPersonas">
+      
+    </div>
+<button id="button">NO TOQUES ACA</button>
+  </main>
+
+  <footer class="footer">
+    <small class="footer__text">
+      &copy;2022 - <b>Healty Mind</b> <br>Todos los Derechos Reservados
+  </small>
+  </footer>
+  <script src="java.js"></script>
+</body>
+</html>
