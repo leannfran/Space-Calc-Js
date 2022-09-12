@@ -1,8 +1,4 @@
-//hola pablo como veras estoy retrasado por que me estan matando en la facu lo entrego pra no perder la entrega pero me voy a poner a hacerlo ahora despues de rendir mildisculpas
-//LEANDRO FRANCO
-//igual estuve tocando cosas je
-//la entrega pasada no me figura como entregada nose que paso
-   //alert("Bienvenido, esta es una calculadora espacial")
+
    function funBoton() {
 
     let nombre = document.getElementById("ingrese__nombre").value;

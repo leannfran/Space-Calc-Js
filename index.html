@@ -12,34 +12,17 @@
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="style.css">  
   <meta name="theme-color" content="#fafafa">
-  <script src="https://kit.fontawesome.com/f67ab9bc87.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 
 
 </head>
 
 
 <body id="grid__index">
+  <div class="particles-js"></div>
   <header class="headerNav">
 
-  <nav class="nav container" id="nav">
-      
-      <h1 class="nav__logo">HealtyMind.</h1>
-      
-      <ul class="nav__links">
-        
-        <li class="nav__item"><a class="nav__link" href="#">inicio</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">sobre mi</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">psicologia</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">contacto</a></li>
-      
-      </ul>
-      
-      <a href="#nav" class="nav__hamburger">
-        <i class="fa-solid fa-bars"></i>
-      </a>
-      <a href="#" class="nav__close">
-        <i class="fa-solid fa-xmark"></i>      </a>
-        
+  <nav class="nav container" id="nav"> 
+      <h1 class="nav__logo">SpaceCalc.</h1>
     </nav>
   </header>
 
@@ -66,9 +49,127 @@
 
   <footer class="footer">
     <small class="footer__text">
-      &copy;2022 - <b>Healty Mind</b> <br>Todos los Derechos Reservados
+      &copy;2022 - <b>space calc</b> <br>Todos los Derechos Reservados
   </small>
   </footer>
+  <script> 
+  particlesJS(
+    {
+  "particles": {
+    "number": {
+      "value": 471,
+      "density": {
+        "enable": true,
+        "value_area": 962.0472365193136
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "left",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+  )
+  </script>
+  <script src="particles.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./app.js"></script>
   <script src="java.js"></script>
 </body>
+
 </html>
