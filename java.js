@@ -1,6 +1,6 @@
 
    function funBoton() {
-
+//variables
     let nombre = document.getElementById("ingrese__nombre").value;
   
     let peso = document.getElementById("ingrese__peso").value;
@@ -10,7 +10,14 @@
     let gTierra = 9.8;
     let gMarte = 3.7;
     let gJupiter = 24.8;
-
+    let gLuna = 1.62;
+    let gMercurio = 3.7;
+    let gVenus = 8.87;
+    let gSaturno = 10.4;
+    let gUrano = 8.87;
+    let gNeptuno = 11.15;
+    let gSol = 247;
+// funciones
     function cuentaMarte () {
         return peso * gMarte / gTierra;
         }
@@ -18,7 +25,29 @@
     function cuentaaJupiter () {
         return peso * gJupiter / gTierra;
         }
-
+    function cuentaLuna () {
+        return peso * gLuna / gTierra;
+        }
+    function cuentaMercurio () {
+        return peso * gMercurio / gTierra;
+        }
+    function cuentaVenus () {    
+        return peso * gVenus / gTierra;
+        }
+    function cuentaSaturno () {
+         return peso * gSaturno / gTierra;
+        }
+    function cuentaUrano () {
+        return peso * gUrano / gTierra;
+        }
+    function cuentaNeptuno () {
+        return peso * gNeptuno / gTierra;
+        }
+    function cuentaSol () {
+        return peso * gSol / gTierra;
+        }
+    
+//condicionales
     if (planeta == "marte") {
         pesoFinal = cuentaMarte();
         }
@@ -31,10 +60,54 @@
     else if (planeta == "Jupiter") {
                 pesoFinal = cuentaaJupiter();
         }
+    else if (planeta == "Luna") {
+            pesoFinal = cuentaLuna();
+        }
+    else if (planeta == "luna") {
+                pesoFinal = cuentaLuna();
+        }
+    else if (planeta == "Mercurio") {
+            pesoFinal = cuentaMercurio();
+        }
+        else if (planeta == "mercurio") {
+            pesoFinal = cuentaMercurio();
+        }
+    else if (planeta == "Venus") {
+                pesoFinal = cuentaVenus();
+        }
+        else if (planeta == "venus") {
+            pesoFinal = cuentaVenus();
+    }
+        else if (planeta == "Saturno") {
+            pesoFinal = cuentaSaturno();
+        }
+        else if (planeta == "saturno") {
+            pesoFinal = cuentaSaturno();
+        }
+    else if (planeta == "Urano") {
+                pesoFinal = cuentaUrano();
+        }
+        else if (planeta == "urano") {
+            pesoFinal = cuentaUrano();
+    }
+        else if (planeta == "Neptuno") {
+            pesoFinal = cuentaNeptuno();
+        }
+    else if (planeta == "Sol") {
+                pesoFinal = cuentaSol();
+        }
+        else if (planeta == "sol") {
+            pesoFinal = cuentaSol();
+        }
+        else if (planeta == false) {
+            pesoFinal = alert("Ingrese un planeta VALIDO!");
+        }
+    
+        
 
     pesoFinal = parseInt(pesoFinal)
 
-    let escritura = "el peso de " + nombre + " en " + planeta + " es de " + pesoFinal + "kg";
+    let escritura =   nombre + " Tu peso final en " + planeta + " es de " + pesoFinal + "kg";
   
     pesoFinal__h3.innerHTML = escritura;
 

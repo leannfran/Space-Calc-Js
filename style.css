@@ -33,42 +33,7 @@ body{
     overflow: hidden;
   
   }
-  nav {
-    --state-close: scale(0);
-    --state-hamburger: scale(1);
   
-  
-     padding: 0px 0 40px;
-     display: grid;
-     justify-content: space-between;
-     align-items: center;
-     grid-template-columns: repeat(2, max-content)
-  }
-  
-  .nav__logo {
-    
-    color: #000;
-  }
-  
-  .nav__links {
-    display:none;
-  }
-  .nav__hamburger,
-  .nav__close {
-    cursor: pointer;
-    grid-column: -2/-1;
-    grid-row: 1/2;
-    transition: .4s transform;
-  }
-  .nav__hamburger {
-    transform: var(--state-hamburger);
-  }
-  .nav__close{
-    transform: var(--state-close);
-  }
-  .nav__icon {
-    width: 40px;
-  }
   
   
   
@@ -132,17 +97,24 @@ body{
   }
   input {
     display: flex;
-    margin: 0.5rem;
+    margin: 0.5rem auto 1.5rem;
     border-radius: 0.2rem;
     text-decoration: none;
     border: rgb(255, 255, 255) ;
     padding: 0.2rem;
+    border-bottom: white 1px solid;
+
 
   }
   label {
     color: white;
   }
-
+  .planetas__check {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+  }
   #boton__calc {
     padding: 1rem;
     color: white;
@@ -160,6 +132,7 @@ body{
     justify-content: space-around;
     flex-wrap: nowrap; 
     flex-direction: row;
+    color: aliceblue;
   }
 
 #particles-js {
@@ -167,4 +140,9 @@ body{
   height: 100vh;
   width: 100%;
 
+}
+#container__sobrePeso{
+  margin: 1rem;
+  font-size: small;
+  opacity: 0.5;
 }
